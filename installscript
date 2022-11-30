@@ -99,4 +99,8 @@ echo "----| Installing MONITORING APPS |-----"
 sudo apt-get install nvtop -y
 sudo apt-get install htop -y
 
+#installing NODE JS v18.x
+echo "----| Installing NODE JS v18.x |-----"
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\ sudo apt-get install -y nodejs
+
 sudo apt autoremove
