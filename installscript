@@ -98,9 +98,30 @@ sudo apt install -y gh
 echo "----| Installing MONITORING APPS |-----"
 sudo apt-get install nvtop -y
 sudo apt-get install htop -y
+sudo apt install sysstat -y
+sudo apt install fping -y
+sudo apt install traceroute -y
+sudo apt-get install nmap -y
 
 #installing NODE JS v18.x
 echo "----| Installing NODE JS v18.x |-----"
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\ sudo apt-get install -y nodejs
 
+# installing Wireshark
+echo "----| Installing Wireshark |----"
+sudo add-apt-repository ppa:wireshark-dev/stable
+sudo apt-get update
+sudo apt-get install wireshark -y
+
+# Installing SSH
+echo "----| Installing SSH |----"
+sudo apt install openssh-client openssh-server -y
+
+# Installing Telnet
+echo "----| Installing Telnet |----"
+sudo apt install telnetd -y
+
+# Installing Java JDK & JRE 17
+echo "----| Installing Java JDK & JRE 17 |----"
+sudo apt install openjdk-17-jdk openjdk-17-jre -y
 sudo apt autoremove
