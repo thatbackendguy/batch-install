@@ -129,7 +129,7 @@ if [ "$install_all" = true ] || read -p "Do you want to install monitoring apps 
  sudo apt install sysstat fping traceroute -y
 fi
 
-#installing NODE JS v18.x
+#installing NODE JS
 if [ "$install_all" = true ] || read -p "Do you want to install Node.js v18.x? (y/n/q) " choice && [ "$choice" = "y" ]; then
  echo "----| Installing NODE JS |-----"
  sudo snap install node --classic
