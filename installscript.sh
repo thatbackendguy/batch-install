@@ -130,7 +130,7 @@ if [ "$install_all" = true ] || read -p "Do you want to install monitoring apps 
 fi
 
 #installing NODE JS
-if [ "$install_all" = true ] || read -p "Do you want to install Node.js v18.x? (y/n/q) " choice && [ "$choice" = "y" ]; then
+if [ "$install_all" = true ] || read -p "Do you want to install Node.js? (y/n/q) " choice && [ "$choice" = "y" ]; then
  echo "----| Installing NODE JS |-----"
  sudo snap install node --classic
 fi
@@ -163,9 +163,8 @@ fi
 
 sudo apt autoremove
 
-echo "To configure: git"
+echo "---------------\nTo configure: git"
 echo "git config --global user.name '<Your Name>'"
 echo "git config --global user.email '<Your Email>'"
-
-echo "To configure: gh (GitHub CLI)"
+echo "---------------\nTo configure: gh (GitHub CLI)"
 echo "gh config login"
