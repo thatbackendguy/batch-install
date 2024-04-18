@@ -120,6 +120,7 @@ fi
 if [ "$install_all" = true ] || read -p "Do you want to install Git CLI? (y/n/q) " choice && [ "$choice" = "y" ]; then
   echo "----| Installing GIT CLI |-----"
   sudo apt install -y gh
+fi
 
 #installing MONITORING APPS
 if [ "$install_all" = true ] || read -p "Do you want to install monitoring apps (nvtop, htop, sysstat, fping, traceroute, nmap)? (y/n/q) " choice && [ "$choice" = "y" ]; then
