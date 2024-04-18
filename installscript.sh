@@ -11,7 +11,7 @@ echo "                                                            __/ |       __
 echo "                                                           |___/       |___/ ";
 sleep 3
 
-sudo apt update && sudo apt upgrade -y;
+sudo apt update && sudo apt upgrade -y > /dev/null;
 
 echo "";
 echo "----------------------------------";
@@ -201,7 +201,7 @@ if [[ "$choice" =~ ^[Yy]$ ]]; then
  sudo apt install openjdk-17-jdk openjdk-17-jre -y
 fi
 
-sudo apt autoremove
+sudo apt autoremove > /dev/null
 
 echo ""
 echo ""
