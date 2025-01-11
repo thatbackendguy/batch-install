@@ -205,7 +205,7 @@ if [ $? -eq 0 ]; then
   sudo apt install openjdk-17-jdk openjdk-17-jre -y
   fi
 
-  sudo apt autoremove >/dev/null 2>&1
+  sudo apt autoremove -y >/dev/null 2>&1
 
   echo ""
   echo ""
