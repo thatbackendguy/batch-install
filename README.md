@@ -16,9 +16,5 @@ The script installs the following programs:
 5. **Network Tools**: net-tools, Wireshark, SSH, Telnet, Monitoring-Tools
 6. **Programming Languages**: Python3, Node.js, Java17
 
-## Screenshots
-![Menu](./images/1.png)
-![Selection Menu](./images/2.png)
-![Review Installations](./images/3.png)
 
 ## Contributed by [thatbackendguy](https://www.github.com/thatbackendguy)
